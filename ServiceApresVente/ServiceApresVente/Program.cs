@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ServiceApresVente.Context;
+using ServiceApresVente.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+// Ajouter DbContext avec la chaîne de connexion
 builder.Services.AddDbContextPool<AppDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-// Configure the HTTP request pipeline.
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 
-
+// Ajouter les dépôts
 builder.Services.AddScoped<IArticlePieceRepository, ArticlePieceRepository>();
 builder.Services.AddScoped<IArticleRepository, ArticleRepository>();
 builder.Services.AddScoped<IClientArticleRepository, ClientArticleRepository>();
@@ -21,43 +22,27 @@ builder.Services.AddScoped<IReclamationRepository, ReclamationRepository>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
 var app = builder.Build();
 
-<<<<<<< HEAD
-
-
-
-
-
-=======
-builder.Services.AddDbContextPool<AppDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
-
-// Configurer les options de cookie pour l'authentification
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Account/Login";
-    options.AccessDeniedPath = "/Account/AccessDenied";
-});
-
-// Configure the HTTP request pipeline.
->>>>>>> de652c6b3fc17935439755bb6c4172cd0632c71f
+// Configuration pour les environnements de production et développement
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // Valeur par défaut de HSTS (HTTP Strict Transport Security) pour la production
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+// Ordre des middlewares : Routing -> Authentification -> Autorisation -> Contrôleur
 app.UseRouting();
-app.UseAuthentication();
+
 
 app.UseAuthorization();
 
+// Configurer les routes des contrôleurs
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

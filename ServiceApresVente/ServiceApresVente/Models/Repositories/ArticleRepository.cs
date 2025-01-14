@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ServiceApresVente.Context;
 using ServiceApresVente.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,9 @@ namespace ServiceApresVente.Repositories
 {
     public class ArticleRepository : IArticleRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public ArticleRepository(ApplicationDbContext context)
+        public ArticleRepository(AppDbContext context)
         {
             _context = context;
         }
@@ -17,13 +18,13 @@ namespace ServiceApresVente.Repositories
         // Récupérer tous les articles
         public IList<Article> GetAll()
         {
-            return _context.Articles.Include(a => a.PiecesDisponibles).ToList();
+            return _context.Articles.Include(a => a.ArticlePieces).ToList();
         }
 
         // Récupérer un article par son identifiant
         public Article GetById(int id)
         {
-            return _context.Articles.Include(a => a.PiecesDisponibles)
+            return _context.Articles.Include(a => a.ArticlePieces)
                                     .FirstOrDefault(a => a.Id == id);
         }
 
@@ -55,21 +56,20 @@ namespace ServiceApresVente.Repositories
         // Récupérer un article par son nom
         public Article GetByNom(string nom)
         {
-            return _context.Articles.Include(a => a.PiecesDisponibles)
-                                    .FirstOrDefault(a => a.Nom == nom);
+            return _context.Articles.Include(a => a.ArticlePieces).FirstOrDefault(a => a.Nom == nom);
         }
 
         // Récupérer tous les articles par type
         public IList<Article> GetByType(string type)
         {
             return _context.Articles.Where(a => a.Nom.Contains(type)) // Assuming the type is part of the article name
-                                    .Include(a => a.PiecesDisponibles).ToList();
+                                    .Include(a => a.ArticlePieces).ToList();
         }
 
         // Récupérer toutes les pièces associées à un article
         public IList<ArticlePiece> GetArticlePiecesByArticleId(int articleId)
         {
-            return _context.ArticlePieces.Where(ap => ap.ArticleId == articleId).ToList();
+            return _context.Pieces.Where(ap => ap.ArticleId == articleId).ToList();
         }
     }
 }

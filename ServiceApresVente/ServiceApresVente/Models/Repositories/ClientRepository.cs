@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ServiceApresVente.Context;
 using ServiceApresVente.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,9 @@ namespace ServiceApresVente.Repositories
 {
     public class ClientRepository : IClientRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public ClientRepository(ApplicationDbContext context)
+        public ClientRepository(AppDbContext context)
         {
             _context = context;
         }

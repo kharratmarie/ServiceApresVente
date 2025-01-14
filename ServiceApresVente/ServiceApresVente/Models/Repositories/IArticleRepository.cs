@@ -1,3 +1,5 @@
+using ServiceApresVente.Models;
+
 public interface IArticleRepository
 {
     // Récupérer tous les articles

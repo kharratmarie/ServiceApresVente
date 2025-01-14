@@ -1,3 +1,5 @@
+using ServiceApresVente.Models;
+
 namespace ServiceApresVente.Repositories
 {
 	public interface IArticlePieceRepository
