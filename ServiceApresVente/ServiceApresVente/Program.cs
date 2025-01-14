@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ServiceApresVente.Context;
 
@@ -22,11 +23,26 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+builder.Services.AddDbContextPool<AppDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+
+// Configurer les options de cookie pour l'authentification
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+});
+
+// Configure the HTTP request pipeline.
+>>>>>>> de652c6b3fc17935439755bb6c4172cd0632c71f
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -38,6 +54,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
 
