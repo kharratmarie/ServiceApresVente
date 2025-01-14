@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\gi3\.NET\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.csproj.AssemblyReference.cache
 D:\gi3\.NET\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.GeneratedMSBuildEditorConfig.editorconfig
 D:\gi3\.NET\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.AssemblyInfoInputs.cache
@@ -7,3 +8,14 @@ D:\gi3\.NET\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8
 D:\gi3\.NET\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.RazorAssemblyInfo.cache
 D:\gi3\.NET\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.RazorAssemblyInfo.cs
 D:\gi3\.NET\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.sourcelink.json
+=======
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.csproj.AssemblyReference.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.GeneratedMSBuildEditorConfig.editorconfig
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.AssemblyInfoInputs.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.AssemblyInfo.cs
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.csproj.CoreCompileInputs.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.MvcApplicationPartsAssemblyInfo.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.RazorAssemblyInfo.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.RazorAssemblyInfo.cs
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.sourcelink.json
+>>>>>>> 2de926942b1f327072d3a52a4461d474bc8a57c3

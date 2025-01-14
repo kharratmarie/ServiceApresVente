@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using ServiceApresVente.Models;
 using System.Collections.Generic;
 using System.Linq;
-
 namespace ServiceApresVente.Repositories
 {
     public class ArticlePieceRepository : IArticlePieceRepository
