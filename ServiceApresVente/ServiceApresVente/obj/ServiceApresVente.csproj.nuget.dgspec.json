@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GI3\\dotnet\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj": {}
+    "D:\\gi3\\.NET\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj": {}
   },
   "projects": {
-    "C:\\GI3\\dotnet\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj": {
+    "D:\\gi3\\.NET\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GI3\\dotnet\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj",
+        "projectUniqueName": "D:\\gi3\\.NET\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj",
         "projectName": "ServiceApresVente",
-        "projectPath": "C:\\GI3\\dotnet\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\GI3\\dotnet\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\obj\\",
+        "projectPath": "D:\\gi3\\.NET\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente.csproj",
+        "packagesPath": "C:\\Users\\nihel_gln54wj\\.nuget\\packages\\",
+        "outputPath": "D:\\gi3\\.NET\\ServiceApresVente\\ServiceApresVente\\ServiceApresVente\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nihel_gln54wj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,20 +81,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.6, 8.0.6]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.6, 8.0.6]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.6, 8.0.6]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.6, 8.0.6]"
+              "version": "[8.0.8, 8.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -105,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

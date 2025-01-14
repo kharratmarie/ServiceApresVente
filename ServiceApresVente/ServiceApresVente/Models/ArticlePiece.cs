@@ -2,6 +2,10 @@
 {
     public class ArticlePiece
     {
+
+        public int Id { get; set; }
+        public string Nom { get; set; }
+
         public int ArticleId { get; set; }
         public Article Article { get; set; }
 
