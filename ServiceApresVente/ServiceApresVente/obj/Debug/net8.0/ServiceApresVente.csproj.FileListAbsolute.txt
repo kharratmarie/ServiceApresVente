@@ -1,0 +1,9 @@
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.csproj.AssemblyReference.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.GeneratedMSBuildEditorConfig.editorconfig
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.AssemblyInfoInputs.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.AssemblyInfo.cs
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.csproj.CoreCompileInputs.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.MvcApplicationPartsAssemblyInfo.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.RazorAssemblyInfo.cache
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.RazorAssemblyInfo.cs
+C:\GI3\dotnet\ServiceApresVente\ServiceApresVente\ServiceApresVente\obj\Debug\net8.0\ServiceApresVente.sourcelink.json
